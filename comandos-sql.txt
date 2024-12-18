@@ -1,0 +1,8 @@
+
+
+COMANDOS EN TERMINAL MYSQL
+- Crea base de datos en mySQL: CREATE DATABASE IF NOT EXISTS toys
+- Muestra las bases: show database;
+- Muestra las tablas: show tables;
+
+INSTALACION DE npm install --save mysql2

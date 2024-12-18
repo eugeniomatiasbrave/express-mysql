@@ -1,0 +1,12 @@
+
+PASOS PARA GREAR API REST DESDE CERO:
+
+1- Instalar package.json: npm init -y  
+2- Instalar express: npm i express
+3- Crear el "type":"module"  en package.json
+4- Crear carpeta SRC.
+5- Crear archivo raiz..llamarlo index.js, app.js o server.js.
+6- Realizar la importacion de express en archivo raiz.
+7- Instalar nodemon para levantar el servidor, o con watch de node:  npm i nodemon -D en devDependencies
+8- Crear script "dev" para levantar el servidor con nodemon: "dev": "nodemon src/app.js
+9- Crear el servidor en app.js y levantarlo en algun puerto. 
