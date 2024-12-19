@@ -1,15 +1,15 @@
 import express from 'express';
-import { pool } from './db.js';
-
+import employeesRoutes from './routes/employees.routes.js';
+import indexRoutes from './routes/index.routes.js';
 
 const app = express();
 
-app.get('/ping',  async (req, res) => {
-	const [result] = await pool.query("SELECT 1 + 1 AS solution")
-	res.json(result[0]);
-});
+app.use(express.json());
 
-const PORT = 8080;
+app.use(indexRoutes);
+app.use('/api/employees', employeesRoutes);
+
+const PORT = 3000;
 app.listen(PORT ,() => {
 	  console.log(`Server is running on port ${PORT} - `+ new Date());
 })
